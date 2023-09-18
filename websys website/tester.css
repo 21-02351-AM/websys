@@ -1,0 +1,518 @@
+@import url('https://fonts.cdnfonts.com/css/foreigner');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up basic styling for the body */
+html, body, #page {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 87.5%;
+    margin: 0;
+    word-wrap: break-word;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: url(Images/bgg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Hide webkit scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Create a navigation bar */
+nav {
+    display: flex;
+    position: fixed;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Style navigation links */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Foreigner', sans-serif;
+}
+
+/* Add underline effect to navigation links on hover */
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #dd4b39;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Define a class for styling boxes */
+.defaultbox {
+    padding: 5px;
+}
+
+.defaultbox li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.defaultbox li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+
+.defaultbox li a:hover {
+    color: #86484080;
+}
+
+/* Define styles for the full page container */
+.FULLPAGE {
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.87);
+    background-image: linear-gradient(to top, rgba(6, 41, 181, 0.3), rgba(0, 0, 0, 0.158));
+    padding: 40px;
+    margin: auto;
+    margin-top: 18%;
+}
+
+/* Style the image in the full page container */
+.box0 .img {
+    border-radius: 75%;
+    width: auto;
+    height: 370px;
+    float: left;
+}
+
+.box0 .img:hover {
+    background-image: linear-gradient(to bottom left, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* Style the introduction text in the full page container */
+.box0 .intro {
+    width: auto;
+    margin: auto;
+    margin-top: 0%;
+    padding-top: 70px;
+    margin-right: 170px;
+    font-family: 'Foreigner', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box0 .intro {
+    margin: auto;
+    margin-top: 0%;
+}
+
+.box0 .intro .name {
+    color: #5918df;
+}
+
+/*--------------------------*/
+/*------------------ABOUT----------------*/
+/*----------------------------------*/
+.aboutbox {
+    background-color: #272822;
+}
+
+.classsection {
+    padding: 60px;
+}
+
+.box1 {
+    width: auto;
+    background: #272822;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0%;
+    color: white;
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc)*/
+.about-img-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+
+    background-color: #fa7e1e;
+}
+
+.about-img-container .container-left {
+    background-color: #feda75;
+}
+
+.about-img-container .container-right {
+    background-color: #39ddcf;
+}
+
+.about-img {
+    padding-right: 10%;
+    width: 31.9%;
+    width: 50%;
+    height: auto;
+
+    float: left;
+}
+
+.aboutbox::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.vs-aboutme {
+    width: 1700px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 70px;
+}
+
+/*-------monokai theme*-----*/
+/* Define the background color and text color for the Monokai theme */
+.vs-aboutme .monokai-theme {
+    color: #f8f8f2;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    width: auto;
+}
+
+/* Style comments in the code */
+.comment {
+    color: #75715e;
+    /* Comment color in Monokai theme */
+}
+
+/* Style keywords in the code */
+.keyword {
+    color: #f92672;
+    /* Keyword color in Monokai theme */
+}
+
+/* Style strings in the code */
+.string {
+    color: #e6db74;
+    /* String color in Monokai theme */
+}
+
+/* Style other syntax elements as needed */
+
+/* Style the code block */
+code {
+    display: block;
+    padding: 8px;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+
+
+
+/*-----------------------*/
+/*------------------ACHIEVEMENTS---------------*/
+/*-----------------------------*/
+.aboveachievement{
+    margin: 60px;
+}
+.achievementbox {
+    background-color: #3333309e;
+    margin-top: 130px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.box2 {
+    width: 450px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: white;
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+}
+
+.box2-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+/*-------------------------------*/
+/*-------------CONTACTS--------------*/
+/*----------------------*/
+
+.contactsbox {
+    margin-top: 200px;
+}
+
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.box {
+    width: 450px;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+    background-color: #272822;
+    ;
+    text-align: center;
+    border-radius: 7%;
+}
+
+.contacts-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box h5 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.box p {
+    text-align: justify;
+}
+
+/*ICONS*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(1.3);
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 25%;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+    border-radius: 25%;
+}
+
+.fa-github {
+    background: #2c3e50;
+    color: white;
+    border-radius: 25%;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(to bottom left, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    color: white;
+    border-radius: 25%;
+}
+
+
+/*-------------------------
+--------------TIMELINE-----
+---------------------------*/
+
+.box-timeline {
+    width: 450px;
+    height: auto;
+    background: #272822;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0%;
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+    font-size:small;
+    border-radius: 25%;
+    color: #f92672;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #272822;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+
+/* Place the container to the left */
+.left {
+    right: 6.7%;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #272822;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #272822;
+}
+
+.left::before {
+    right: 30px;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #272822;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #272822;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: #272822;
+    position: relative;
+    border-radius: 6px;
+    height: 280px;
+    color: #e6db74;
+    font-size: large;
+}
+
+.content h2 {
+    text-align: justify;
+    color: #f92672;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid #272822;
+        border-width: 10px 10px 10px 0;
+        border-color: #272822;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+/* Continue styling for other sections of your page as needed */
